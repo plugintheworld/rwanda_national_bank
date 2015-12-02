@@ -2,7 +2,7 @@
 
 Wraps a simple scraper to retrieve the historic exchange rates for Rwandan Franc (RWF). Returns
 the average (between buy and sell) rates for any yesterday or any day specified and supported by the
-National Bank of Rwanda.
+National Bank of Rwanda (BNR).
 
 ## Install
 
@@ -29,11 +29,12 @@ Or install it yourself as:
 ### Initialize
 
 ```ruby
-  xe = RwandaNationalBank::HistoricRates.new as_of: Date(2015, 10, 24)
+  xe = RwandaNationalBank::HistoricRates.new as_of: Date.new(2015, 10, 24)
   xe.import! # => true
 ```
 
 ``import!`` returns ``true`` if rates have been found. Might also throw HTTP errors.
+It will also return ``false`` when requesting rates for weekend days.
 
 ### Retrieve a specific rate
 
