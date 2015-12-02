@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.homepage     = 'http://github.com/plugintheworld/rwanda_national_bank'
   s.license      = 'GPL'
 
-  s.add_dependency 'nokogiri'
-  s.add_development_dependency 'rspec', '~> 3.3.0'
+  s.add_runtime_dependency 'nokogiri', '~> 1.6'
+  s.add_development_dependency 'rspec', '~> 3.3'
 
   s.require_path = 'lib'
   s.files        = Dir.glob('lib/**/*') + %w(LICENSE README.md)
