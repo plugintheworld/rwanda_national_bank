@@ -1,3 +1,5 @@
-require 'eu_central_bank'
+require 'rwanda_national_bank'
 
-I18n.enforce_available_locales = false
+RSpec.configure do |config|
+  config.raise_errors_for_deprecations!
+end
