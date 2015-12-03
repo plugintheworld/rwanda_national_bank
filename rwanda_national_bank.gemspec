@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'nokogiri', '~> 1.6'
   s.add_development_dependency 'rspec', '~> 3.3'
+  s.add_development_dependency 'nyan-cat-formatter'
 
   s.require_path = 'lib'
   s.files        = Dir.glob('lib/**/*') + %w(LICENSE README.md)

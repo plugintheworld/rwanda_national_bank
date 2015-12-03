@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     rwanda_national_bank (0.1.0)
-      nokogiri
+      nokogiri (~> 1.6)
 
 GEM
   remote: https://rubygems.org/
@@ -11,6 +11,8 @@ GEM
     mini_portile2 (2.0.0)
     nokogiri (1.6.7)
       mini_portile2 (~> 2.0.0.rc2)
+    nyan-cat-formatter (0.11)
+      rspec (>= 2.99, >= 2.14.2, < 4)
     rake (10.4.2)
     rspec (3.3.0)
       rspec-core (~> 3.3.0)
@@ -30,8 +32,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  nyan-cat-formatter
   rake
-  rspec (~> 3.3.0)
+  rspec (~> 3.3)
   rwanda_national_bank!
 
 BUNDLED WITH
